@@ -13,6 +13,10 @@
 		BFF483D11E2D7AF9006ADA49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF483CF1E2D7AF9006ADA49 /* Main.storyboard */; };
 		BFF483D31E2D7AF9006ADA49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF483D21E2D7AF9006ADA49 /* Assets.xcassets */; };
 		BFF483D61E2D7AF9006ADA49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF483D41E2D7AF9006ADA49 /* LaunchScreen.storyboard */; };
+		BFF483E21E2D7B74006ADA49 /* RMKAzureTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF483E11E2D7B74006ADA49 /* RMKAzureTranslator.m */; };
+		BFF483E51E2D7CFE006ADA49 /* RMKAzureTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF483E41E2D7CFE006ADA49 /* RMKAzureTokenManager.m */; };
+		BFF483EA1E2D8F58006ADA49 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF483E91E2D8F58006ADA49 /* CFNetwork.framework */; };
+		BFF483F01E2D904A006ADA49 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF483EF1E2D904A006ADA49 /* XMLDictionary.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		BFF483D21E2D7AF9006ADA49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFF483D51E2D7AF9006ADA49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFF483D71E2D7AF9006ADA49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF483E01E2D7B74006ADA49 /* RMKAzureTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMKAzureTranslator.h; path = RMKAzureTranslator/RMKAzureTranslator.h; sourceTree = SOURCE_ROOT; };
+		BFF483E11E2D7B74006ADA49 /* RMKAzureTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMKAzureTranslator.m; path = RMKAzureTranslator/RMKAzureTranslator.m; sourceTree = SOURCE_ROOT; };
+		BFF483E31E2D7CFE006ADA49 /* RMKAzureTokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMKAzureTokenManager.h; path = RMKAzureTranslator/RMKAzureTokenManager.h; sourceTree = SOURCE_ROOT; };
+		BFF483E41E2D7CFE006ADA49 /* RMKAzureTokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMKAzureTokenManager.m; path = RMKAzureTranslator/RMKAzureTokenManager.m; sourceTree = SOURCE_ROOT; };
+		BFF483E91E2D8F58006ADA49 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BFF483EE1E2D904A006ADA49 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLDictionary.h; path = "../../../../Downloads/FGTranslator-master/FGTranslator/XMLDictionary/XMLDictionary.h"; sourceTree = "<group>"; };
+		BFF483EF1E2D904A006ADA49 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLDictionary.m; path = "../../../../Downloads/FGTranslator-master/FGTranslator/XMLDictionary/XMLDictionary.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF483EA1E2D8F58006ADA49 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +54,10 @@
 		BFF483BA1E2D7AF9006ADA49 = {
 			isa = PBXGroup;
 			children = (
+				BFF483DD1E2D7B20006ADA49 /* RMKAzureTranslator */,
 				BFF483C51E2D7AF9006ADA49 /* RMKAzureTranslatorDemo */,
 				BFF483C41E2D7AF9006ADA49 /* Products */,
+				BFF483E81E2D8F58006ADA49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +91,36 @@
 				BFF483C71E2D7AF9006ADA49 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFF483DD1E2D7B20006ADA49 /* RMKAzureTranslator */ = {
+			isa = PBXGroup;
+			children = (
+				BFF483ED1E2D903B006ADA49 /* XMLDictionary */,
+				BFF483E01E2D7B74006ADA49 /* RMKAzureTranslator.h */,
+				BFF483E11E2D7B74006ADA49 /* RMKAzureTranslator.m */,
+				BFF483E31E2D7CFE006ADA49 /* RMKAzureTokenManager.h */,
+				BFF483E41E2D7CFE006ADA49 /* RMKAzureTokenManager.m */,
+			);
+			name = RMKAzureTranslator;
+			path = RMKAzureTranslatorDemo;
+			sourceTree = "<group>";
+		};
+		BFF483E81E2D8F58006ADA49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF483E91E2D8F58006ADA49 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFF483ED1E2D903B006ADA49 /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				BFF483EE1E2D904A006ADA49 /* XMLDictionary.h */,
+				BFF483EF1E2D904A006ADA49 /* XMLDictionary.m */,
+			);
+			name = XMLDictionary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +197,10 @@
 			files = (
 				BFF483CE1E2D7AF9006ADA49 /* ViewController.m in Sources */,
 				BFF483CB1E2D7AF9006ADA49 /* AppDelegate.m in Sources */,
+				BFF483E21E2D7B74006ADA49 /* RMKAzureTranslator.m in Sources */,
 				BFF483C81E2D7AF9006ADA49 /* main.m in Sources */,
+				BFF483E51E2D7CFE006ADA49 /* RMKAzureTokenManager.m in Sources */,
+				BFF483F01E2D904A006ADA49 /* XMLDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +321,7 @@
 				DEVELOPMENT_TEAM = WCFL462RM7;
 				INFOPLIST_FILE = RMKAzureTranslatorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manjukiran.RMKAzureTranslatorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -286,6 +334,7 @@
 				DEVELOPMENT_TEAM = WCFL462RM7;
 				INFOPLIST_FILE = RMKAzureTranslatorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.manjukiran.RMKAzureTranslatorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

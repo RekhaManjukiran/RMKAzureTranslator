@@ -7,16 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "RMKAzureTranslator.h"
 
 @interface AppDelegate ()
 
 @end
+
+static NSString *const RMKAzureTranslatorKey = @"<Insert Azure Key Here>";
+
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [RMKAzureTranslator initWithAzureKey:RMKAzureTranslatorKey];
+    
     return YES;
 }
 

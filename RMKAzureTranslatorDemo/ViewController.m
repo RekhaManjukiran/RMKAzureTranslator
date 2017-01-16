@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "RMKAzureTranslator.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,22 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [[RMKAzureTranslator sharedInstance] translateString:@"Hello, my name is Rekha"
+                                            fromLanguage:@"en" toLanguage:@"fr" onCompletion:^(NSString *translatedString, NSError *error)
+                                {
+                                    if(error)
+                                    {
+                                        NSLog(@"%@",error);
+                                    }
+                                    else
+                                    {
+                                        NSLog(@"%@",translatedString);
+                                    }
+                                }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
