@@ -72,7 +72,7 @@ to your podfile
 
 ## Attributions
 
-FGTranslator uses the following projects:
+RMKAzureTranslator uses the following projects:
 
 - [XMLDictionary](https://github.com/nicklockwood/XMLDictionary)
 	
