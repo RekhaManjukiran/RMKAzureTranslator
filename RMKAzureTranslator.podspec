@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'RMKAzureTranslator'
-  spec.version      = '1.0'
+  spec.version      = '1.0.1'
   spec.license      = 'MIT'
   spec.summary      = 'A simple iOS utility to translate using Microsoft Azure'
   spec.homepage     = 'https://github.com/RekhaManjukiran/RMKAzureTranslator'
