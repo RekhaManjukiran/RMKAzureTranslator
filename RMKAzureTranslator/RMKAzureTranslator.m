@@ -137,6 +137,8 @@ static NSString *const RMKMicrosoftTranslationURLWithoutSourceLanguage= @"https:
                                     }];
     [dataTask resume];
 
+    
+    
 }
 /* Sample URL Type
  https://api.microsofttranslator.com/v2/http.svc/Translate?appid=Bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzY29wZSI6Imh0dHBzOi8vYXBpLm1pY3Jvc29mdHRyYW5zbGF0b3IuY29tLyIsInN1YnNjcmlwdGlvbi1pZCI6IjgwNzc5MDUzMTg1ZTQ2MWQ5YzEyYWFmZGU5NDc1YjExIiwicHJvZHVjdC1pZCI6IlRleHRUcmFuc2xhdG9yLkYwIiwiY29nbml0aXZlLXNlcnZpY2VzLWVuZHBvaW50IjoiaHR0cHM6Ly9hcGkuY29nbml0aXZlLm1pY3Jvc29mdC5jb20vaW50ZXJuYWwvdjEuMC8iLCJhenVyZS1yZXNvdXJjZS1pZCI6Ii9zdWJzY3JpcHRpb25zLzc4OWNhYThhLTJkYzYtNGE1Zi1iYjZhLTlkYWQzNzU2ZWI1ZC9yZXNvdXJjZUdyb3Vwcy9STUtTb2x1dGlvbnMvcHJvdmlkZXJzL01pY3Jvc29mdC5Db2duaXRpdmVTZXJ2aWNlcy9hY2NvdW50cy9SZWtoYV9NYW5qdV9LaXJhbiIsImlzcyI6InVybjptcy5jb2duaXRpdmVzZXJ2aWNlcyIsImF1ZCI6InVybjptcy5taWNyb3NvZnR0cmFuc2xhdG9yIiwiZXhwIjoxNDg0NjA4NzU4fQ.kMlBdtOHzbNWiYfgKvOfKaYl8UiT2TXkVGjINcV2tFU&text=Hello%2C%20my%20name%20is%20Rekha&from=en&to=fr

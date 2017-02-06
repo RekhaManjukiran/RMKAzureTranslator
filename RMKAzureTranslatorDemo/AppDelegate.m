@@ -13,9 +13,7 @@
 
 @end
 
-static NSString *const RMKAzureTranslatorKey = @"<Insert Azure Key Here>";
-
-
+static NSString *const RMKAzureTranslatorKey = @"a893c7e4b446454490dbc4090a8aad5e";
 @implementation AppDelegate
 
 

@@ -24,7 +24,7 @@
 {
     [super viewDidAppear:animated];
     [[RMKAzureTranslator sharedInstance] translateString:@"Hello, my name is Rekha"
-                                            fromLanguage:@"en" toLanguage:@"fr" onCompletion:^(NSString *translatedString, NSError *error)
+                                            fromLanguage:@"en" toLanguage:@"nl" onCompletion:^(NSString *translatedString, NSError *error)
                                 {
                                     if(error)
                                     {
